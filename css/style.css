@@ -6,6 +6,26 @@
   --secondary-font: Raleway, sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
+
 .list {
   list-style: none;
 }
@@ -20,7 +40,50 @@ body {
   color: var(--main-text-color);
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* ======= Components ======= */
+
 /* =======Header======= */
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border: 1px solid #ececec;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.contakt-header {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.logo-link {
+  margin-right: 92px;
+}
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
 
 a.logo-link {
   font-family: var(--secondary-font);
@@ -58,6 +121,7 @@ a.logo-link {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  margin-right: 50px;
 }
 .office-link:hover,
 .office-link:focus {
@@ -79,8 +143,23 @@ a.logo-link {
 /* =======End Header======= */
 
 /* =======Hero======= */
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: #2f303a;
+}
+
+.hero-main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .hero-title {
+  width: 696px;
+  align-items: center;
+  justify-content: center;
   font-family: var(--main-font);
   font-weight: 900;
   font-size: 44px;
@@ -91,6 +170,8 @@ a.logo-link {
   color: #ffffff;
 }
 .button {
+  margin-top: 30px;
+  padding: 10px, 32px;
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 16px;
@@ -122,6 +203,7 @@ a.logo-link {
 /* =======End Hero======= */
 
 .section-main-title {
+  margin-bottom: 50px;
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 36px;
@@ -133,6 +215,16 @@ a.logo-link {
 
 /* =======Features======= */
 
+.features-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .section-title {
   font-family: var(--main-font);
   font-weight: 700;
@@ -143,6 +235,8 @@ a.logo-link {
   color: var(--title-text-color);
 }
 .description {
+  width: 270px;
+  margin-top: 10px;
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 14px;
@@ -152,7 +246,42 @@ a.logo-link {
 }
 /* =======End Features======= */
 
+/* =======Чем мы занимаемся======= */
+
+.work {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+/* .work-item:not(:last-child) {
+  margin-right: 30px;
+} */
+.work-item {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
 /* =======Team======= */
+.section-team {
+  background-color: #f5f4fa;
+}
+
+.team {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.team-item {
+  margin-left: 30px;
+  margin-top: 30px;
+  border-radius: 0px 0px 4px 4px;
+}
+
 .name {
   font-family: var(--main-font);
   font-weight: 500;
@@ -174,6 +303,10 @@ a.logo-link {
 /* =======End Team======= */
 
 /* =======Footer======= */
+.section-footer {
+  background-color: #2f303a;
+}
+
 a .adress-list {
   font-family: var(--main-font);
   font-weight: 400;
