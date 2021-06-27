@@ -80,9 +80,16 @@ body {
 
 .logo-link {
   margin-right: 92px;
+  padding-bottom: 25px;
+  padding-top: 24px;
+  letter-spacing: 0.03em;
 }
 .menu-item:not(:last-child) {
   margin-right: 50px;
+}
+.menu-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 a.logo-link {
@@ -153,11 +160,11 @@ a.logo-link {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
 }
 
 .hero-title {
   width: 696px;
+  margin-bottom: 30px;
   align-items: center;
   justify-content: center;
   font-family: var(--main-font);
@@ -169,10 +176,14 @@ a.logo-link {
   text-transform: uppercase;
   color: #ffffff;
 }
-.button {
-  margin-top: 30px;
-  width: 200px;
-  height: 50px;
+
+.button.service {
+  padding: 10px, 32px;
+  align-items: center;
+
+  /* width: 200px;
+  height: 50px; */
+
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 16px;
@@ -185,15 +196,12 @@ a.logo-link {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
-.service .button {
-  padding: 10px, 32px;
-}
 
 .nav-button {
   border: none;
   padding: 6px, 22px;
+  width: 145px;
   height: 38px;
-
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 16px;
@@ -216,6 +224,8 @@ a.logo-link {
   align-items: center;
   justify-content: center;
   border: transparent;
+  margin-top: 94px;
+  margin-bottom: 50px;
 }
 .list-item:not(:last-child) {
   margin-right: 8px;
@@ -243,31 +253,36 @@ a.logo-link {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  max-width: 100%;
   margin-left: -30px;
   margin-top: -30px;
+  margin-bottom: 94px;
 }
 
 .products-item {
   flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
   margin-top: 30px;
+  width: 370px;
+  height: 404px;
   background: #ffffff;
-  /* border-left: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee; */
+}
+.border-cards {
+  border: 1px solid #eeeeee;
 }
 .section-title-portfolio {
   margin-top: 20px;
+  width: 322px;
+  height: 36px;
 }
 .description-portfolio {
-  margin-top: 10px;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  width: 322px;
+  height: 30px;
 }
 
 /* =======Features======= */
-
-/* .section-features {
-  background-color: #e5e5e5;
-} */
 
 .features-item:not(:last-child) {
   margin-right: 30px;
@@ -302,9 +317,6 @@ a.logo-link {
 
 /* =======Чем мы занимаемся======= */
 
-/* .section-work {
-  background-color: #e5e5e5;
-} */
 .work {
   display: flex;
   align-items: center;
@@ -335,6 +347,8 @@ a.logo-link {
   flex-basis: calc((100% - 120px) / 4);
   margin-left: 30px;
   margin-top: 30px;
+  width: 270px;
+  height: 368px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -366,7 +380,14 @@ a.logo-link {
 
 /* =======Footer======= */
 .section-footer {
+  height: 252px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2f303a;
+}
+.container-footer {
+  display: flex;
+  flex-direction: column;
 }
 
 a .adress-list {
@@ -389,7 +410,12 @@ a .adress-list {
   color: #ffffff;
 }
 .contakt {
+  width: 231px;
+  height: 21px;
   color: rgba(255, 255, 255, 0.6);
+}
+.contakt.link {
+  padding-bottom: 9px;
 }
 .adress-link:focus,
 .adress-link:hover {
@@ -400,11 +426,23 @@ a .adress-list {
   color: var(--accent-color);
 }
 .adress .link {
+  width: 231px;
+  height: 21px;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.link.footer {
+  padding-bottom: 20px;
+}
+.contakt-item {
+  margin-bottom: 9px;
+}
+.logo-link.footer {
   letter-spacing: 0.03em;
 }
 /* =======End Footer======= */
