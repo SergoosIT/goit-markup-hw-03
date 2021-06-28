@@ -58,7 +58,7 @@ body {
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .header-container {
   display: flex;
@@ -98,7 +98,7 @@ a.logo-link {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  font-style: none;
+  font-style: normal;
   color: #212121;
 }
 .logo-accent {
@@ -178,7 +178,7 @@ a.logo-link {
 }
 
 .button.service {
-  padding: 10px, 32px;
+  padding: 10px 32px;
   align-items: center;
 
   /* width: 200px;
@@ -199,9 +199,7 @@ a.logo-link {
 
 .nav-button {
   border: none;
-  padding: 6px, 22px;
-  width: 145px;
-  height: 38px;
+  padding: 6px 22px;
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 16px;
@@ -379,12 +377,13 @@ a.logo-link {
 /* =======End Team======= */
 
 /* =======Footer======= */
+
 .section-footer {
-  height: 252px;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
 }
+
 .container-footer {
   display: flex;
   flex-direction: column;
@@ -394,7 +393,7 @@ a .adress-list {
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -402,21 +401,23 @@ a .adress-list {
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  line-height: 1.7;
   color: #ffffff;
 }
 .logo-link.link.footer {
   color: #ffffff;
+  width: 155px;
+  height: 31px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  padding: 0px;
 }
 .contakt {
   width: 231px;
   height: 21px;
   color: rgba(255, 255, 255, 0.6);
 }
-.contakt.link {
-  padding-bottom: 9px;
-}
+
 .adress-link:focus,
 .adress-link:hover {
   color: var(--accent-color);
@@ -436,13 +437,7 @@ a .adress-list {
   letter-spacing: 0.03em;
 }
 
-.link.footer {
-  padding-bottom: 20px;
-}
 .contakt-item {
   margin-bottom: 9px;
-}
-.logo-link.footer {
-  letter-spacing: 0.03em;
 }
 /* =======End Footer======= */
