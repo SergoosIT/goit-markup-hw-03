@@ -98,11 +98,13 @@ a.logo-link {
   line-height: 1.19;
   letter-spacing: 0.03em;
   font-style: normal;
+  text-decoration: none;
   color: #212121;
 }
 .logo-accent {
   color: var(--accent-color);
 }
+
 .menu .link.current {
   color: var(--accent-color);
 }
