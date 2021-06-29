@@ -35,6 +35,7 @@ img {
 }
 
 body {
+  margin: 0px;
   font-family: var(--main-font);
   font-weight: 400;
   color: var(--main-text-color);
@@ -80,8 +81,6 @@ body {
 
 .logo-link {
   margin-right: 92px;
-  padding-bottom: 25px;
-  padding-top: 24px;
   letter-spacing: 0.03em;
 }
 .menu-item:not(:last-child) {
@@ -181,9 +180,6 @@ a.logo-link {
   padding: 10px 32px;
   align-items: center;
 
-  /* width: 200px;
-  height: 50px; */
-
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 16px;
@@ -222,8 +218,8 @@ a.logo-link {
   align-items: center;
   justify-content: center;
   border: transparent;
-  margin-top: 94px;
-  margin-bottom: 50px;
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 .list-item:not(:last-child) {
   margin-right: 8px;
@@ -232,6 +228,9 @@ a.logo-link {
 .list .nav-button.current {
   background-color: var(--accent-color);
   color: #ffffff;
+}
+.hero-portfolio {
+  padding-bottom: 94px;
 }
 
 /* =======End Hero======= */
@@ -251,10 +250,8 @@ a.logo-link {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 100%;
   margin-left: -30px;
   margin-top: -30px;
-  margin-bottom: 94px;
 }
 
 .products-item {
@@ -262,20 +259,20 @@ a.logo-link {
   margin-left: 30px;
   margin-top: 30px;
   width: 370px;
-  height: 404px;
   background: #ffffff;
 }
 .border-cards {
+  padding-top: 20px;
+  padding-bottom: 20px;
   border: 1px solid #eeeeee;
 }
 .section-title-portfolio {
-  margin-top: 20px;
+  color: #212121;
   width: 322px;
   height: 36px;
 }
 .description-portfolio {
   margin-top: 4px;
-  margin-bottom: 20px;
   width: 322px;
   height: 30px;
 }
@@ -315,6 +312,10 @@ a.logo-link {
 
 /* =======Чем мы занимаемся======= */
 
+.section-work {
+  padding-top: 0px;
+}
+
 .work {
   display: flex;
   align-items: center;
@@ -330,6 +331,7 @@ a.logo-link {
 }
 
 /* =======Team======= */
+
 .section-team {
   background-color: #f5f4fa;
 }
@@ -354,7 +356,6 @@ a.logo-link {
 }
 
 .name {
-  padding-top: 30px;
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 16px;
@@ -365,7 +366,7 @@ a.logo-link {
 }
 .activity {
   padding-top: 10px;
-  padding-bottom: 30px;
+
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 16px;
@@ -373,6 +374,10 @@ a.logo-link {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+}
+.name-activity {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 /* =======End Team======= */
 
@@ -406,9 +411,6 @@ a .adress-list {
 }
 .logo-link.link.footer {
   color: #ffffff;
-  width: 155px;
-  height: 31px;
-  margin-top: 60px;
   margin-bottom: 20px;
   padding: 0px;
 }
