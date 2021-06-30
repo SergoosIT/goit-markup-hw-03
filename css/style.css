@@ -220,8 +220,7 @@ a.logo-link {
   align-items: center;
   justify-content: center;
   border: transparent;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .list-item:not(:last-child) {
   margin-right: 8px;
@@ -232,6 +231,7 @@ a.logo-link {
   color: #ffffff;
 }
 .hero-portfolio {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -264,8 +264,7 @@ a.logo-link {
   background: #ffffff;
 }
 .border-cards {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
 .section-title-portfolio {
